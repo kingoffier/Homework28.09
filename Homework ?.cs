@@ -17,7 +17,15 @@ namespace ConsoleApp14
             double m = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите переменную n - ");
             double n = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine(x>=m & x<=n ? "Точка принадлежит закрашенной области":"Точка не принадлежит закрашенной области");
+            bool result = x >= m & x <= n;
+            if (result)
+            {
+                Console.WriteLine("Точка принадлежит чисти плоскости");
+            }
+            else
+            {
+                Console.WriteLine("Точка не принадлежит части плоскости");
+            }
             Console.ReadKey();
         }
     }
