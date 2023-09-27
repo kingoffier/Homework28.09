@@ -10,22 +10,23 @@ namespace ConsoleApp13
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите координаты точки");
-            double x=Convert.ToDouble(Console.ReadLine());
-            double y=Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите переменную m - ");
-            double m=Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите переменную n - ");
-            double n =Convert.ToDouble(Console.ReadLine());
-            if (x>=m & x<=n)
-            {
-                Console.WriteLine("Точка принадлежит чисти плоскости");
-            }
-            else
-            {
-                Console.WriteLine("Точка не принадлежит части плоскости");
-            }
-            Console.ReadKey();
+             Console.WriteLine("Введите координаты точки");
+             double x = Convert.ToDouble(Console.ReadLine());
+             double y = Convert.ToDouble(Console.ReadLine());
+             Console.WriteLine("Введите переменную m - ");
+             double m = Convert.ToDouble(Console.ReadLine());
+             Console.WriteLine("Введите переменную n - ");
+             double n = Convert.ToDouble(Console.ReadLine());
+             bool result = x >= m && x <= n;
+             if (result)
+             {
+                    Console.WriteLine("Точка принадлежит части плоскости");
+             }
+             else
+             {
+                 Console.WriteLine("Точка не принадлежит части плоскости");
+             }
+             Console.ReadKey();
         }
     }
 }
